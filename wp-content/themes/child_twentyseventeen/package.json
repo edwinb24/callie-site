@@ -19,9 +19,14 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "gulp-sass": "^3.2.1",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "gulp-uglify": "^3.0.1"
   }
 }
