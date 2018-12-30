@@ -8,3 +8,11 @@ function trabajando_site_theme_enqueue_script() {
 
 add_action( 'wp_enqueue_scripts', 'trabajando_site_theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'trabajando_site_theme_enqueue_script' );
+
+function trabajando_theme_setup() {
+  add_theme_support('menus');
+  register_nav_menu('primary','Primary Header Navigation');
+}
+
+//init make the function run before theme setup, so before styles & scripts
+add_action('init','trabajando_theme_setup');
