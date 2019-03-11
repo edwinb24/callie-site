@@ -30,4 +30,14 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest("./assets/js"));
 })
 
-gulp.task('default', ['sass','css','scripts']);
+// gulp.task('fontawesomescss', function() {
+//   return gulp.src('./node_modules/font-awesome/scss/*')
+//     .pipe(gulp.dest('./assets'))
+// })
+
+gulp.task('fonts', function() {
+  return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(gulp.dest('./assets/fonts'))
+})
+
+gulp.task('default', ['sass','css','scripts','fonts']);

@@ -1,7 +1,18 @@
 @import "partials/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/font-awesome/scss/font-awesome";
-
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
 body {
   background: $bg-color;
+}
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
 }
